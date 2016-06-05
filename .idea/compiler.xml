@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="ApiTest" />
+        <module name="HttpApiTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ApiTest" target="1.5" />
+      <module name="HttpApiTest" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
