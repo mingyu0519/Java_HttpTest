@@ -1,7 +1,7 @@
 package com.test.interview;
 
 public class VariableTest {
-	public static void main(String[] args) {
+	public void variableBasicTest() {
 		// byte
 		System.out.println("基本类型：byte 二进制位数：" + Byte.SIZE);
 		System.out.println("包装类：java.lang.Byte");
@@ -35,7 +35,18 @@ public class VariableTest {
 		// char
 		System.out.println("基本类型：Character 二进制位数：" + Character.SIZE);
 		System.out.println("包装类：java.lang.Character");
-		System.out.println("最小值：Character.MIN_VALUE=" + (int)Character.MIN_VALUE);
-		System.out.println("最大值：Character.MAX_VALUE=" + (int)Character.MAX_VALUE);
+		System.out.println("最小值：Character.MIN_VALUE=" + (int) Character.MIN_VALUE);
+		System.out.println("最大值：Character.MAX_VALUE=" + (int) Character.MAX_VALUE);
+	}
+	
+	public void variableFinalTest() {
+		final double PI = 3.1415927;
+		System.out.println(PI);
+	}
+
+	public static void main(String[] args) {
+		VariableTest vTest = new VariableTest();
+//		vTest.variableBasicTest();
+		vTest.variableFinalTest();
 	}
 }
