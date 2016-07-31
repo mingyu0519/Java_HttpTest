@@ -42,6 +42,8 @@ public class VariableTest {
 	public void variableFinalTest() {
 		final double PI = 3.1415927;
 		System.out.println(PI);
+		int age = 0;
+		age = age + 1;
 	}
 
 	public static void main(String[] args) {
