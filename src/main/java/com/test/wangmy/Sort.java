@@ -39,8 +39,8 @@ public class Sort {
 	public static void main(String[] args) {
 		Sort sort = new Sort();
 		sort.bubbleSort();
-		System.out.println();
-		sort.selectSort();
+//		System.out.println();
+//		sort.selectSort();
 	}
 
 }
