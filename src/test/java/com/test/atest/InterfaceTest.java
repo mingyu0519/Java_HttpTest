@@ -7,5 +7,6 @@ public class InterfaceTest implements InterfaceA{
 	public static void main(String[] args) {
 		InterfaceTest iTest = new InterfaceTest();
 		iTest.eat();
+		System.out.println(iTest.name);
 	}
 }
