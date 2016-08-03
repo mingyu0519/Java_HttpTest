@@ -1,5 +1,6 @@
 package com.test.xml;
 
+import java.io.File;
 import java.io.StringWriter;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -44,6 +45,8 @@ public class WriteXML {
 			StringWriter sWriter = new StringWriter();
 			transformer.transform(new DOMSource(root), new StreamResult(sWriter));
 			System.out.println(sWriter.toString());
+			
+			transformer.transform(new DOMSource(root), new StreamResult(new File("test.xml")));
 			
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
