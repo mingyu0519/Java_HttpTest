@@ -1,4 +1,4 @@
-package com.test.readxml;
+package com.test.xml;
 
 import java.io.IOException;
 
