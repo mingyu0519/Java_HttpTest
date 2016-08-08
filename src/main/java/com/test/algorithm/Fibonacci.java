@@ -1,7 +1,5 @@
 package com.test.algorithm;
 
-import java.util.ArrayList;
-
 public class Fibonacci {
 	public static void test1(int n) {
 		int a = 1, b=1, c = 0;
