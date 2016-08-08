@@ -33,10 +33,19 @@ public class Fibonacci {
 			}
 		}
 	}
+	
+	public static int test3(int n) {
+		if (n == 1 || n == 2) {
+			return 1;
+		}else {
+			return test3(n-1) + test3(n-2);
+		}
+	}
 
 	public static void main(String[] args) {
 //		test1(20);
-		test2(20);
+//		test2(20);
+		System.out.println(test3(6));
 	}
 
 }
