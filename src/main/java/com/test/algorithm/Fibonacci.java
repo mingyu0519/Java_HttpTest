@@ -43,7 +43,7 @@ public class Fibonacci {
 	public static void main(String[] args) {
 //		test1(20);
 //		test2(20);
-		System.out.println(test3(6));
+		System.out.println(test3(50));
 	}
 
 }
