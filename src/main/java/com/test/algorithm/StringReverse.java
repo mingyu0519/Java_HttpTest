@@ -9,10 +9,21 @@ public class StringReverse {
 		String right = s.substring(length/2, length);
 		return reverse1(right) + reverse1(left);
 	}
+	private static String reverse2(String s) {
+		int length = s.length();
+		String reverse = "";
+		for (int i = 0; i < length; i++) {
+			reverse = s.charAt(i) + reverse;
+		}
+		return reverse;
+	}
 
 	public static void main(String[] args) {
+//		String a = "abcdefgh";
+//		String bString = reverse1(a);
+//		System.out.println(bString);
 		String a = "abcdefgh";
-		String bString = reverse1(a);
+		String bString = reverse2(a);
 		System.out.println(bString);
 	}
 
