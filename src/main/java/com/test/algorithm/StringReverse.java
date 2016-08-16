@@ -17,13 +17,25 @@ public class StringReverse {
 		}
 		return reverse;
 	}
+	private static String reverse3(String s) {
+		char[] array = s.toCharArray();
+		String reverse = "";
+		for (int i = 0; i < array.length; i++) {
+			reverse = array[i] + reverse;
+		}
+		return reverse;
+	}
 
 	public static void main(String[] args) {
-//		String a = "abcdefgh";
+		String a = "abcdefgh";
+		
 //		String bString = reverse1(a);
 //		System.out.println(bString);
-		String a = "abcdefgh";
-		String bString = reverse2(a);
+		
+//		String bString = reverse2(a);
+//		System.out.println(bString);
+		
+		String bString = reverse3(a);
 		System.out.println(bString);
 	}
 
