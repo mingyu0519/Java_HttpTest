@@ -25,6 +25,9 @@ public class StringReverse {
 		}
 		return reverse;
 	}
+	private static String reverse4(String s) {
+		return new StringBuffer(s).reverse().toString();
+	}
 
 	public static void main(String[] args) {
 		String a = "abcdefgh";
@@ -35,7 +38,10 @@ public class StringReverse {
 //		String bString = reverse2(a);
 //		System.out.println(bString);
 		
-		String bString = reverse3(a);
+//		String bString = reverse3(a);
+//		System.out.println(bString);
+
+		String bString = reverse4(a);
 		System.out.println(bString);
 	}
 
