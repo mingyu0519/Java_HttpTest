@@ -25,6 +25,8 @@ public class Fibonacci {
 				System.out.println("第" + (i+1) + "等于" + arrayList[0]);
 			}else if (i == 1) {
 				System.out.println("第" + (i+1) + "等于" + arrayList[1]);
+			}else if (i == 2) {
+				System.out.println("第" + (i+1) + "不等于" + arrayList[1]);
 			}else {
 				arrayList[i] = arrayList[i-1] +arrayList[i-2];
 				System.out.println("第" + (i+1) + "等于" + arrayList[i]);
